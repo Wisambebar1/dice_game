@@ -4,7 +4,6 @@ import Instructions from './Components/Instructions'
 import Request from './Components/Request'
 import Roll from './Components/Roll'
 import Start_game from './Components/Start_game'
-// import Data from './Components/Images'
 function App() {
   return(
     <div>
