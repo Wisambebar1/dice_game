@@ -7,8 +7,7 @@ const Accumulate=({total,handleScore})=>{
     }
     return(
         <div>
-            <h1>Player</h1>
-            <h2>{acum}</h2>
+            <h2>Global score:{acum}</h2>
             <button onClick={handleAcum}>Hold</button>
         </div>
     )
