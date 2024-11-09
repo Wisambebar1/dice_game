@@ -16,6 +16,7 @@ const Roll=({input})=>{
             <button onClick={handleRollBtn}>Roll</button>
             <img id="img-1" src={Images[number1-1]}/>
             <img id="img-2" src={Images[number2-1]}/>
+            
         </div>
     )
 }

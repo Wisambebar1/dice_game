@@ -7,18 +7,23 @@ const Current=({number1,number2,input})=>{
     useEffect(()=>{
         if(total>input){
             alert("u passed the score limit")
-    }
-    else if(total===input && total>0){
+        }
+        else if(total===input && total>0){
         alert("u reached limit")
-    }
+        }
             },[total])
+    let [acum,setAcum]=useState(0)
+    const handleAcum=()=>{
+        setAcum(Acum=>total+Acum)
+    }
     const handleReset=()=>{
         setTotal(0)
-}
+        setAcum(0)
+    }
     return(
         <div>
             <h1 >Current score:{total}</h1>
-            <Accumulate total={total} handleScore={handleReset}/>
+            <Accumulate total={total} handleAcum={handleAcum} acum={acum}/>
             <New_game handleReset={handleReset}/>
         </div>
     )

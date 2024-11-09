@@ -1,10 +1,4 @@
-import { useState} from "react"
-const Accumulate=({total,handleScore})=>{
-    let [acum,setAcum]=useState(0)
-    const handleAcum=()=>{
-        setAcum(Acum=>total+Acum)
-        handleScore()
-    }
+const Accumulate=({total,acum,handleAcum})=>{
     return(
         <div>
             <h2>Global score:{acum}</h2>
