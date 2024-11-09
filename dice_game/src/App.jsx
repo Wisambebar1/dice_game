@@ -9,10 +9,10 @@ function App() {
       <section id="section-1">
         <Instructions/>
         <Start_game/>
-        <Request/>
-        <Input/>
       </section>
       <section id="section-2">
+        <Request/>
+        <Input/>
       </section>
     </div>
   )
