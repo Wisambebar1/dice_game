@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Roll from "./Roll";
 const Input=()=>{
     let [input,setInputValue]=useState(0);
     const handleInputChange=(e)=>{
@@ -8,6 +9,7 @@ const Input=()=>{
     return(
         <div>
             <input onChange={handleInputChange} type="number"></input>
+            <Roll input={input}/>
         </div>
     )
 }
