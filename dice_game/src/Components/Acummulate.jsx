@@ -1,5 +1,4 @@
 import { useState} from "react"
-import Input from "./Input"
 const Accumulate=({total,handleScore})=>{
     let [acum,setAcum]=useState(0)
     const handleAcum=()=>{
