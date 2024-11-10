@@ -28,7 +28,7 @@ const Current=({number1,number2,input})=>{
     }
     return(
         <div>
-            <h1 >Current score:{total}</h1>
+            <h1 className="current-global-score">Current score:{total}</h1>
             <Accumulate total={total} handleAcum={handleAcum} acum={acum}/>
             <New_game handleReset={handleReset}/>
         </div>

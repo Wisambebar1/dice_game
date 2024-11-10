@@ -2,7 +2,7 @@ const Start=()=>{
     return(
         <div>
             <a href="#section-2">
-                <button>Start game</button>
+                <button className="button">Start game</button>
             </a>
         </div>
     )
