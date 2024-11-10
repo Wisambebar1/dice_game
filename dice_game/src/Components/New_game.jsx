@@ -1,7 +1,7 @@
 const New_game=({handleReset,handleAcum})=>{
     return(
         <div>
-            <button type="button" onClick={handleReset}>Reset</button>
+            <button className="button" type="button" onClick={handleReset}>Reset</button>
         </div>
     )
 }

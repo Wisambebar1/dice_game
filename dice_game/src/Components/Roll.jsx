@@ -13,7 +13,7 @@ const Roll=({input})=>{
     return(
         <div>
             <Current number1={number1} number2={number2} input={input}/>
-            <button onClick={handleRollBtn}>Roll</button>
+            <button className="button" onClick={handleRollBtn}>Roll</button>
             <img id="img-1" src={Images[number1-1]}/>
             <img id="img-2" src={Images[number2-1]}/>
             

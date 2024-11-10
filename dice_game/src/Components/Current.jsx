@@ -12,8 +12,8 @@ const Current=({number1,number2,input})=>{
         alert("u reached limit")
         }
             },[total])
-    useEffect((number1,number2)=>{
-        if(number1===6 && number2===6 && input!=0){
+    useEffect(()=>{
+        if(number1===6 && number2===6){
             alert("game over")
         }
     },[number1,number2])
@@ -28,7 +28,7 @@ const Current=({number1,number2,input})=>{
     }
     return(
         <div>
-            <h1 >Current score:{total}</h1>
+            <h1 className="current-global-score">Current score:{total}</h1>
             <Accumulate total={total} handleAcum={handleAcum} acum={acum}/>
             <New_game handleReset={handleReset}/>
         </div>

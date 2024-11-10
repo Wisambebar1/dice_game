@@ -12,7 +12,7 @@ function App() {
       </section>
       <section id="section-2">
         <Request/>
-        <Input/>
+        <Input id="input"/>
       </section>
     </div>
   )
