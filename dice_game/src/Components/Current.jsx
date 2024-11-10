@@ -2,7 +2,6 @@ import React ,{ useState,useEffect } from 'react'
 import New_game from './New_game';
 import Accumulate from './Acummulate';
 const Current=({number1,number2,input})=>{
-    console.log(number1,number2)
     let [total,setTotal]=useState(0);
     useEffect(()=>{setTotal(total=>total+number1+number2)},[number1,number2])
     useEffect(()=>{
