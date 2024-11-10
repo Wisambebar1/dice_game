@@ -22,3 +22,12 @@
 .current-global-score{
   font-size:2.5rem;
 }
+.img{
+  height:20vh;
+  width:10vw;
+}
+#Roll-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}

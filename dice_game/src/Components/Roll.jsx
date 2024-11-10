@@ -11,11 +11,11 @@ const Roll=({input})=>{
         setNumber2(number2)
     }
     return(
-        <div>
+        <div id="Roll-container">
             <Current number1={number1} number2={number2} input={input}/>
-            <button className="button" onClick={handleRollBtn}>Roll</button>
-            <img id="img-1" src={Images[number1-1]}/>
-            <img id="img-2" src={Images[number2-1]}/>
+            <button className="button" id="roll" onClick={handleRollBtn}>Roll</button>
+            <img className="img" src={Images[number1-1]}/>
+            <img className="img" src={Images[number2-1]}/>
             
         </div>
     )
