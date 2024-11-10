@@ -12,9 +12,15 @@ const Current=({number1,number2,input})=>{
         alert("u reached limit")
         }
             },[total])
+    useEffect((number1,number2)=>{
+        if(number1===6 && number2===6 && input!=0){
+            alert("game over")
+        }
+    },[number1,number2])
     let [acum,setAcum]=useState(0)
     const handleAcum=()=>{
         setAcum(Acum=>total+Acum)
+        setTotal(0)
     }
     const handleReset=()=>{
         setTotal(0)
