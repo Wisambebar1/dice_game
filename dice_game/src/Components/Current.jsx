@@ -2,6 +2,7 @@ import React ,{ useState,useEffect } from 'react'
 import New_game from './New_game';
 import Accumulate from './Acummulate';
 const Current=({number1,number2,input})=>{
+    console.log(number1,number2)
     let [total,setTotal]=useState(0);
     useEffect(()=>{setTotal(total=>total+number1+number2)},[number1,number2])
     useEffect(()=>{
@@ -12,8 +13,8 @@ const Current=({number1,number2,input})=>{
         alert("u reached limit")
         }
             },[total])
-    useEffect((number1,number2)=>{
-        if(number1===6 && number2===6 && input!=0){
+    useEffect(()=>{
+        if(number1===6 && number2===6){
             alert("game over")
         }
     },[number1,number2])
